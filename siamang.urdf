@@ -1,0 +1,50 @@
+<robot name="siamang">
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+	<link name="torso">
+		<visual>
+		    <origin xyz="0 0 1.5" rpy="0 0 0"/>
+			<geometry>
+				<box size="1 .5 2"/>
+			</geometry>
+			<material name="white">
+	       		<color rgba="0 0.9 0.9 1.0"/>
+	     	</material>
+		</visual>	
+	</link>
+
+  <link name="r_arm_j0">
+    <visual>
+      <geometry>
+        <cylinder radius=".125" length=".375"/>
+      </geometry>
+      <material name="blue" />
+      <origin xyz=".6875 0 2.375" rpy="0 1.57 0" />
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius=".125" length=".375"/>
+      </geometry>
+    </collision>
+  </link>
+ 
+  <link name="l_arm_j0">
+    <visual>
+      <geometry>
+        <cylinder radius=".125" length=".375"/>
+      </geometry>
+      <material name="blue" />
+      <origin xyz="-.6875 0 2.375" rpy="0 1.57 0" />
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius=".125" length=".375"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>
