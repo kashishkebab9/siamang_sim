@@ -18,9 +18,9 @@ Arm::Arm(Eigen::Matrix4d offset_from_torso_, std::string name_) {
 
 void Arm::SetAngles(joint_angles config) {
   std::cout << "Setting the following angles: " << std::endl;
-  std::cout << "q0: " << config.q0_;
-  std::cout << "q1: " << config.q1_;
-  std::cout << "q2: " << config.q2_;
+  std::cout << "q0: " << config.q0_ << std::endl;
+  std::cout << "q1: " << config.q1_ << std::endl;
+  std::cout << "q2: " << config.q2_ << std::endl;
   q0 = config.q0_;
   q1 = config.q1_;
   q2 = config.q2_;
