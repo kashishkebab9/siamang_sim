@@ -22,6 +22,7 @@ int main() {
   Arm right_arm(right_arm_torso_j0, ra_name);
   Arm::position curr_position = right_arm.FwdKinematics();
   Leg right_leg(right_leg_torso_j0, rl_name);
+  Leg::position curr_position_leg = right_leg.FwdKinematics();
   
   return 0;
 }
